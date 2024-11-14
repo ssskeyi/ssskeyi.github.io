@@ -1,7 +1,7 @@
-title: 我的个人网站
+title: ycb的个人网站
 description: 软件工程师 | 开源爱好者
 baseurl: ""
-url: "https://你的用户名.github.io"
+url: "https://ssskeyi.github.io"
 
 # 主题设置
 theme: minima
@@ -11,9 +11,7 @@ plugins:
 
 # 社交媒体链接
 social_links:
-  github: 你的GitHub用户名
-  twitter: 你的Twitter用户名
-  linkedin: 你的LinkedIn用户名
+  github: ssskeyi
 
 # 导航菜单
 header_pages:
