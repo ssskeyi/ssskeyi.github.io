@@ -1,0 +1,34 @@
+@import "{{ site.theme }}";
+
+// 自定义样式
+.profile-image {
+    border-radius: 50%;
+    max-width: 200px;
+    margin: 20px auto;
+    display: block;
+}
+
+.social-links {
+    text-align: center;
+    margin: 20px 0;
+
+    a {
+        margin: 0 10px;
+        color: #333;
+
+        &:hover {
+            color: #0366d6;
+        }
+    }
+}
+
+.project-card {
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 16px;
+
+    &:hover {
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+}
