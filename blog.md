@@ -3,29 +3,19 @@ layout: blog
 title: 博客
 permalink: /blog/
 ---
-# 技术博客
+# ycb博客
 
 这里是我的技术博客，主要分享以下主题：
 
-## 技术专题
+## 资源
 
-- Web开发最佳实践
-- 前端框架使用心得
-- 后端架构设计
-- 数据库优化技巧
-
-## 学习笔记
-
-- 新技术探索
-- 问题解决方案
-- 开发工具使用技巧
-
-## 开源项目
-
-- 项目开发经验
-- 代码质量提升
-- 性能优化实践
-
----
+- [有用的电子书](https://github.com/ssskeyi/csbook)
+- [Tao个代码](https://github.com/ssskeyi/TaoTao)
+- [工具素材箱](https://qcneoyy8rlww.feishu.cn/docx/QJR8dh9pOos6Jsxom35cVUl5n2d)
+- [浙大的一个知识编辑相关方向的仓库]([https://github.com/zjunlp/KnowledgeEditin](https://github.com/zjunlp/KnowledgeEditin))
+- [知识编辑]([https://github.com/datawhalechina/learn-nlp-with-transformers](https://github.com/datawhalechina/learn-nlp-with-transformers))
+- [Tmux教程]([https://www.ruanyifeng.com/blog/2019/10/tmux.html](https://www.ruanyifeng.com/blog/2019/10/tmux.html))
+- [LORA教程](https://mp.weixin.qq.com/s/YGE6YYir9WnF8WUQTu3_7w)
+- [llm-cookbook](https://github.com/datawhalechina/llm-cookbook)
 
 > 持续更新中...欢迎关注我的技术分享！
