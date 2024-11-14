@@ -1,5 +1,5 @@
 title: ycb的个人网站
-description: 软件工程师 | 开源爱好者
+description: 软件工程师 | 全栈开发者 | 开源爱好者
 baseurl: ""
 url: "https://ssskeyi.github.io"
 
@@ -12,9 +12,20 @@ plugins:
 # 社交媒体链接
 social_links:
   github: ssskeyi
+  email: mailto:你的邮箱@example.com # 替换为你的实际邮箱
 
 # 导航菜单
 header_pages:
   - about.md
   - projects.md
-  - blog.md 
+  - blog.md
+
+# 网站设置
+timezone: Asia/Shanghai
+encoding: utf-8
+markdown: kramdown
+
+# 作者信息
+author:
+  name: ycb
+  bio: 热爱技术，专注于全栈开发的软件工程师
