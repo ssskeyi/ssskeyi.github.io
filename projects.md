@@ -5,6 +5,13 @@ permalink: /projects/
 ---
 # 我的项目
 
+## 得意之作
+
+- **描述**：集成聊天机器人
+- **技术栈**：Flask+agent+rag+tools api+tts+vue3+live2d
+- **链接**：[展示地址](http://ycb0321.cn/)
+- **补充**：体验账号请联系我，185862110@qq.com
+
 ## Search_bot
 
 - **描述**：基于 agent 的搜索增强技术
