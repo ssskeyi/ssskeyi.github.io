@@ -17,5 +17,7 @@ permalink: /blog/
 - [Tmux教程]([https://www.ruanyifeng.com/blog/2019/10/tmux.html](https://www.ruanyifeng.com/blog/2019/10/tmux.html))
 - [LORA教程](https://mp.weixin.qq.com/s/YGE6YYir9WnF8WUQTu3_7w)
 - [llm-cookbook](https://github.com/datawhalechina/llm-cookbook)
+- [ai-med/squeeze_and_excitation： 用于全卷积神经网络的 2D 和 3D“挤压和激励”块的 PyTorch 实现 (github.com)](https://github.com/ai-med/squeeze_and_excitation)
+- [landskape-ai/triplet-attention： “rotate to attend： convolutional triplet attention module” 的官方 PyTorch 实现。[WACV 2021 年\] (github.com)](https://github.com/landskape-ai/triplet-attention)
 
 > 持续更新中...欢迎关注我的技术分享！
