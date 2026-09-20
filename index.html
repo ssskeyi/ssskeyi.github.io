@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Changbo Yan | 闫常博</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #222222;
+      --accent: #555555;
+      --muted: #888888;
+      --border: #e0e0e0;
+      --link: #1a0dab;
+      --section-gap: 48px;
+      --card-bg: #fafafa;
+      --card-border: #eeeeee;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.75;
+      font-size: 15px;
+    }
+
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 60px 24px 80px;
+    }
+
+    /* ---- Header ---- */
+    header {
+      display: flex;
+      gap: 32px;
+      align-items: flex-start;
+      margin-bottom: var(--section-gap);
+    }
+
+    .avatar {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+      border: 2px solid var(--border);
+    }
+
+    .header-info { flex: 1; }
+
+    .header-info h1 {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      line-height: 1.3;
+      margin-bottom: 6px;
+    }
+
+    .header-info p {
+      color: var(--accent);
+      font-size: 14.5px;
+      line-height: 1.8;
+    }
+
+    .header-info p a { color: var(--accent); }
+    .header-info p a:hover { color: var(--text); text-decoration: none; }
+
+    .header-links {
+      display: flex;
+      gap: 18px;
+      margin-top: 14px;
+      flex-wrap: wrap;
+    }
+
+    .header-links a {
+      font-size: 13px;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .header-links a:hover { color: var(--text); text-decoration: none; }
+
+    /* ---- Divider ---- */
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin-bottom: var(--section-gap);
+    }
+
+    /* ---- Section ---- */
+    section { margin-bottom: var(--section-gap); }
+
+    section h2 {
+      font-size: 17px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      color: var(--text);
+      margin-bottom: 18px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--text);
+      display: inline-block;
+    }
+
+    section p {
+      color: var(--accent);
+      font-size: 14.5px;
+      margin-bottom: 10px;
+    }
+
+    /* ---- Project Card ---- */
+    .project-card {
+      border: 1px solid var(--card-border);
+      border-radius: 10px;
+      padding: 22px 26px;
+      background: var(--card-bg);
+      margin-bottom: 16px;
+    }
+
+    .project-card h3 {
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .project-badge {
+      display: inline-block;
+      background: var(--text);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-bottom: 12px;
+    }
+
+    .project-card p {
+      font-size: 14px;
+      margin-bottom: 14px;
+    }
+
+    .project-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .project-links a {
+      font-size: 13px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .project-links a svg { opacity: 0.7; }
+
+    /* ---- Updates ---- */
+    .updates { list-style: none; }
+
+    .updates li {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 14px;
+      font-size: 14px;
+      color: var(--accent);
+    }
+
+    .updates li .date {
+      color: var(--muted);
+      font-size: 12.5px;
+      white-space: nowrap;
+      padding-top: 2px;
+      min-width: 60px;
+    }
+
+    /* ---- Education ---- */
+    .edu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: var(--accent);
+    }
+
+    .edu-item .period { color: var(--muted); font-size: 12.5px; }
+
+    /* ---- Footer ---- */
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+    }
+
+    /* ---- Responsive ---- */
+    @media (max-width: 560px) {
+      header { flex-direction: column; align-items: center; text-align: center; }
+      .avatar { width: 110px; height: 110px; }
+      .header-links { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <!-- Header -->
+  <header>
+    <img class="avatar" src="shizhi.jpg" alt="Changbo Yan">
+    <div class="header-info">
+      <h1>Changbo Yan <span style="font-weight:400;opacity:0.6;">闫常博</span></h1>
+      <p>
+        Master student, School of Artificial Intelligence<br>
+        <a href="https://www.dlut.edu.cn" target="_blank">Dalian University of Technology</a><br>
+        Mentored by Prof. <a href="#" target="_blank">Lijun Wang</a>
+      </p>
+      <div class="header-links">
+        <a href="mailto:ycb0321@outlook.com">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          ycb0321@outlook.com
+        </a>
+        <a href="https://github.com/zhangzhongbo2213/Attention-DP3" target="_blank">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="https://scholar.google.com" target="_blank">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/></svg>
+          Scholar
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <hr class="divider">
+
+  <!-- About -->
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I am a second-year master's student at the <strong>School of Artificial Intelligence, Dalian University of Technology (DUT)</strong>, advised by Prof. Lijun Wang. My research lies at the intersection of <strong>Embodied AI</strong> and 3D intelligent policy learning, with a particular focus on enabling robotic agents to perceive, understand, and act in complex 3D environments.
+    </p>
+    <p>
+      Prior to DUT, I earned my Bachelor's degree from Dalian University of Technology.
+    </p>
+  </section>
+
+  <!-- News -->
+  <section>
+    <h2>🔥 Updates</h2>
+    <ul class="updates">
+      <li>
+        <span class="date">2026.09</span>
+        <span>🎉 Our work <strong>Attention-DP3</strong> has been accepted by <strong>ECCV 2026</strong>!</span>
+      </li>
+      <li>
+        <span class="date">2026.09</span>
+        <span>🚀 Project page and code are now publicly available.</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Research -->
+  <section>
+    <h2>Research Interest</h2>
+    <p>
+      My research centers on <strong>Embodied AI</strong>, investigating how artificial agents can develop generalizable, task-aware policies that operate robustly in cluttered real-world 3D scenes. I am particularly interested in the synergy between 3D scene understanding and imitation learning, striving to build policies that can effectively attend to task-relevant regions while maintaining generalization across diverse environments.
+    </p>
+  </section>
+
+  <!-- Project -->
+  <section>
+    <h2>📂 Publications & Projects</h2>
+
+    <div class="project-card">
+      <span class="project-badge">ECCV 2026</span>
+      <h3>Attention-DP3: Spatially Object-aware 3D Diffusion Policy via Geometry-aligned Attentional Conditioning</h3>
+      <p>
+        While DP3 demonstrates strong 3D spatial awareness and modeling capabilities, its original architecture pays insufficient attention to task-relevant regions, limiting its generalization. We introduce a novel attention mechanism that lifts 2D masks into 3D space and guides the model to focus more on target regions through attention fields across three dimensions. This enables a compact policy to maintain robust performance even as scene complexity increases.
+      </p>
+      <div class="project-links">
+        <a href="https://arxiv.org/pdf/2609.13318" target="_blank">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          arXiv
+        </a>
+        <a href="https://huggingface.co/papers/2609.13318" target="_blank">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          HuggingFace
+        </a>
+        <a href="https://github.com/zhangzhongbo2213/Attention-DP3" target="_blank">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          Code
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section>
+    <h2>📖 Education</h2>
+    <div class="edu-item">
+      <span><strong>Master in Artificial Intelligence</strong> — Dalian University of Technology</span>
+      <span class="period">2024 – present</span>
+    </div>
+    <div class="edu-item">
+      <span><strong>Bachelor in Software Engineering</strong> — Dalian University of Technology</span>
+      <span class="period">2020 – 2024</span>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 Changbo Yan. Built with simplicity.
+  </footer>
+
+</div>
+</body>
+</html>
